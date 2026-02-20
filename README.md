@@ -16,3 +16,13 @@ All in one simple visual test.
 ```
 Generate an SVG illustration of a Saudi camel building an artificial general intelligence system.
 ```
+
+## Results
+
+### Google Gemini 3.1 Pro
+[20-02-2026](./images/svgs/gemini_3.1_pro.svg)
+![Google Gemini 3.1 Pro](./images/pngs/gemini_3.1_pro.png)
+
+### Anthropic Claude Opus 4.6
+[20-02-2026](./images/svgs/opus_4.6.svg)
+![Anthropic Claude Opus 4.6](./images/pngs/opus_4.6.png)
