@@ -30,3 +30,7 @@ Generate an SVG illustration of a Saudi camel building an artificial general int
 ### OpenAI GPT-5.2 Pro
 [20-02-2026](./images/svgs/gpt_5.2_pro.svg)
 ![OpenAI GPT-5.2 Pro](./images/pngs/gpt_5.2_pro.png)
+
+### OpenAI GPT-5.3-Codex
+[20-02-2026](./images/svgs/gpt_5.3_codex.svg)
+![OpenAI GPT-5.3-Codex](./images/pngs/gpt_5.3_codex.png)
