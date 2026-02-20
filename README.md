@@ -1,4 +1,4 @@
-# Saudi Camel AGI LLM Benchmark
+# Saudi Camel AGI LLM Benchmark 🐪
 
 Inspired by [@simonw's "pelican bicycle"](https://github.com/simonw/pelican-bicycle) benchmark, this benchmark tests how well LLMs can generate an SVG of a Saudi camel building an AGI.
 
