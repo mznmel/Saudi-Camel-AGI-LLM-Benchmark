@@ -1,6 +1,6 @@
 # Saudi Camel AGI LLM Benchmark
 
-Inspired by @simonw's "pelican bicycle" benchmark, this benchmark tests how well LLMs can generate an SVG of a Saudi camel building an AGI.
+Inspired by [@simonw's "pelican bicycle"](https://github.com/simonw/pelican-bicycle) benchmark, this benchmark tests how well LLMs can generate an SVG of a Saudi camel building an AGI.
 
 ## Why This Benchmark?
 
@@ -26,3 +26,7 @@ Generate an SVG illustration of a Saudi camel building an artificial general int
 ### Anthropic Claude Opus 4.6
 [20-02-2026](./images/svgs/opus_4.6.svg)
 ![Anthropic Claude Opus 4.6](./images/pngs/opus_4.6.png)
+
+### OpenAI GPT-5.2 Pro
+[20-02-2026](./images/svgs/gpt_5.2_pro.svg)
+![OpenAI GPT-5.2 Pro](./images/pngs/gpt_5.2_pro.png)
