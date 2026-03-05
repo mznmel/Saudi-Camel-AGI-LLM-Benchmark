@@ -1,0 +1,269 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F8E8C7"/>
+      <stop offset="0.55" stop-color="#E3C48E"/>
+      <stop offset="1" stop-color="#B77A3E"/>
+    </linearGradient>
+
+    <linearGradient id="sand" x1="0" y1="620" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D9A35F"/>
+      <stop offset="1" stop-color="#9C5F2E"/>
+    </linearGradient>
+
+    <linearGradient id="sunGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF4C1" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFF4C1" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="camelBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A96C3D"/>
+      <stop offset="1" stop-color="#7B4B26"/>
+    </linearGradient>
+
+    <linearGradient id="camelShade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7C4A24"/>
+      <stop offset="1" stop-color="#5C3418"/>
+    </linearGradient>
+
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F0E5"/>
+      <stop offset="1" stop-color="#D8CCBC"/>
+    </linearGradient>
+
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD76A"/>
+      <stop offset="1" stop-color="#C9931A"/>
+    </linearGradient>
+
+    <linearGradient id="screenGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#92FFF8"/>
+      <stop offset="1" stop-color="#4EC7FF"/>
+    </linearGradient>
+
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5D2E15"/>
+      <stop offset="1" stop-color="#2D1308"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="smallGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="keffiyehPattern" width="18" height="18" patternUnits="userSpaceOnUse">
+      <rect width="18" height="18" fill="url(#cloth)"/>
+      <path d="M0 0L18 18M18 0L0 18" stroke="#9A1E1E" stroke-width="1.2" opacity="0.55"/>
+      <circle cx="9" cy="9" r="1.5" fill="#9A1E1E" opacity="0.4"/>
+    </pattern>
+
+    <pattern id="circuitPattern" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M10 40H34V20H60M34 40V62H54" stroke="#8DFFEE" stroke-width="2" opacity="0.25"/>
+      <circle cx="10" cy="40" r="3" fill="#8DFFEE" opacity="0.35"/>
+      <circle cx="34" cy="20" r="3" fill="#8DFFEE" opacity="0.35"/>
+      <circle cx="60" cy="20" r="3" fill="#8DFFEE" opacity="0.35"/>
+      <circle cx="54" cy="62" r="3" fill="#8DFFEE" opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="920" cy="170" r="120" fill="url(#sunGlow)" filter="url(#softGlow)"/>
+
+  <!-- Distant dunes -->
+  <path d="M0 590C120 540 220 520 340 550C460 580 560 610 700 575C830 545 980 505 1200 560V900H0V590Z" fill="#C98A4C" opacity="0.5"/>
+  <path d="M0 640C170 590 310 620 450 650C620 685 790 620 910 600C1040 580 1130 605 1200 640V900H0V640Z" fill="#B8753E" opacity="0.45"/>
+
+  <!-- Ground -->
+  <path d="M0 690C165 655 311 670 459 708C648 756 816 725 972 700C1067 685 1139 689 1200 704V900H0V690Z" fill="url(#sand)"/>
+
+  <!-- Lab tent / Saudi inspired tech canopy -->
+  <g opacity="0.95">
+    <path d="M725 350L1010 350L1080 635L650 635L725 350Z" fill="#5D2014"/>
+    <path d="M745 370L990 370L1045 615L690 615L745 370Z" fill="#6F2818"/>
+    <path d="M760 383L975 383L1023 600L712 600L760 383Z" fill="url(#circuitPattern)"/>
+    <path d="M760 383L975 383L1023 600L712 600L760 383Z" stroke="#D2A45C" stroke-width="3"/>
+    <path d="M760 383L975 383L867 325L760 383Z" fill="#7A2A18"/>
+    <path d="M975 383L867 325L1023 600" stroke="#D2A45C" stroke-width="3" opacity="0.5"/>
+  </g>
+
+  <!-- AGI core station -->
+  <g transform="translate(790 410)">
+    <rect x="0" y="0" width="200" height="140" rx="22" fill="#10242A" stroke="#73F0FF" stroke-width="3"/>
+    <rect x="18" y="18" width="164" height="104" rx="14" fill="#12333B"/>
+    <rect x="18" y="18" width="164" height="104" rx="14" fill="url(#circuitPattern)" opacity="0.7"/>
+    <circle cx="100" cy="70" r="34" fill="none" stroke="url(#screenGlow)" stroke-width="4" filter="url(#smallGlow)"/>
+    <path d="M100 42L113 62L137 66L120 83L124 107L100 95L76 107L80 83L63 66L87 62L100 42Z"
+          fill="url(#screenGlow)" opacity="0.95" filter="url(#smallGlow)"/>
+    <circle cx="36" cy="112" r="4" fill="#8BFFF4"/>
+    <circle cx="52" cy="112" r="4" fill="#8BFFF4"/>
+    <circle cx="68" cy="112" r="4" fill="#8BFFF4"/>
+    <path d="M200 70H254" stroke="url(#wire)" stroke-width="7" stroke-linecap="round"/>
+    <path d="M254 70C286 70 282 128 320 128" stroke="url(#wire)" stroke-width="7" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Floating AI symbols -->
+  <g filter="url(#smallGlow)" opacity="0.9">
+    <circle cx="730" cy="250" r="6" fill="#7EF8FF"/>
+    <circle cx="784" cy="220" r="4" fill="#7EF8FF"/>
+    <circle cx="835" cy="248" r="5" fill="#7EF8FF"/>
+    <path d="M730 250L784 220L835 248" stroke="#7EF8FF" stroke-width="2.5" fill="none"/>
+    <path d="M870 220h26M883 207v26" stroke="#7EF8FF" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M930 250c18-24 42-24 60 0c-18 24-42 24-60 0Z" stroke="#7EF8FF" stroke-width="2.5" fill="none"/>
+    <circle cx="960" cy="250" r="8" fill="#7EF8FF" opacity="0.7"/>
+  </g>
+
+  <!-- Desk -->
+  <g>
+    <rect x="520" y="565" width="265" height="22" rx="8" fill="#5E3419"/>
+    <rect x="540" y="587" width="16" height="88" rx="8" fill="#4A2812"/>
+    <rect x="735" y="587" width="16" height="88" rx="8" fill="#4A2812"/>
+  </g>
+
+  <!-- Scroll / blueprint -->
+  <g transform="translate(560 518)">
+    <rect x="0" y="0" width="136" height="55" rx="8" fill="#EEDDBA" stroke="#B78F51" stroke-width="3"/>
+    <path d="M14 14H122M14 26H88M14 38H104" stroke="#7D5C27" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="116" cy="28" r="10" fill="none" stroke="#7D5C27" stroke-width="2"/>
+    <path d="M112 28H120M116 24V32" stroke="#7D5C27" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Hologram schematic -->
+  <g transform="translate(610 445)" filter="url(#smallGlow)">
+    <ellipse cx="80" cy="65" rx="70" ry="18" fill="#6EF5FF" opacity="0.18"/>
+    <path d="M30 65L80 20L130 65L80 110L30 65Z" fill="none" stroke="#83F7FF" stroke-width="3"/>
+    <path d="M80 20V110M30 65H130" stroke="#83F7FF" stroke-width="2" opacity="0.8"/>
+    <circle cx="80" cy="65" r="9" fill="#83F7FF"/>
+  </g>
+
+  <!-- Camel -->
+  <g transform="translate(150 255)">
+    <!-- tail -->
+    <path d="M165 310C140 330 137 356 154 377" stroke="#5C3418" stroke-width="10" stroke-linecap="round"/>
+    <path d="M150 376C144 390 157 402 173 398" stroke="#3E220F" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- legs -->
+    <rect x="240" y="334" width="28" height="190" rx="14" fill="url(#camelShade)"/>
+    <rect x="315" y="340" width="28" height="184" rx="14" fill="url(#camelShade)"/>
+    <rect x="430" y="336" width="28" height="188" rx="14" fill="url(#camelShade)"/>
+    <rect x="505" y="330" width="28" height="194" rx="14" fill="url(#camelShade)"/>
+
+    <!-- feet -->
+    <ellipse cx="253" cy="530" rx="28" ry="12" fill="#4A2812"/>
+    <ellipse cx="328" cy="530" rx="28" ry="12" fill="#4A2812"/>
+    <ellipse cx="443" cy="530" rx="28" ry="12" fill="#4A2812"/>
+    <ellipse cx="518" cy="530" rx="28" ry="12" fill="#4A2812"/>
+
+    <!-- body -->
+    <ellipse cx="365" cy="270" rx="210" ry="118" fill="url(#camelBody)"/>
+
+    <!-- humps -->
+    <ellipse cx="310" cy="175" rx="82" ry="92" fill="url(#camelBody)"/>
+    <ellipse cx="430" cy="164" rx="88" ry="101" fill="url(#camelBody)"/>
+
+    <!-- neck -->
+    <path d="M515 208C575 172 612 114 613 54C613 28 599 15 575 17C543 20 521 48 502 94C487 132 484 179 495 221L515 208Z" fill="url(#camelBody)"/>
+
+    <!-- head -->
+    <path d="M566 15C610 12 646 30 663 62C677 89 670 122 640 138C615 151 579 152 550 140C523 129 511 105 519 78C528 45 541 20 566 15Z" fill="url(#camelBody)"/>
+    <path d="M645 108C672 113 686 126 685 147C684 167 668 179 643 179C620 179 603 168 598 149C593 131 607 117 645 108Z" fill="url(#camelShade)"/>
+
+    <!-- muzzle -->
+    <path d="M617 112C645 110 665 122 664 141C663 158 645 167 622 166C602 165 589 154 590 138C591 123 601 114 617 112Z" fill="#8B5630"/>
+
+    <!-- eye -->
+    <ellipse cx="587" cy="71" rx="8" ry="6" fill="#2C160A"/>
+    <circle cx="589" cy="69" r="2" fill="#fff" opacity="0.8"/>
+
+    <!-- ear -->
+    <path d="M549 40C536 22 543 4 563 4C574 4 582 14 578 27C575 38 565 45 549 40Z" fill="#7A4724"/>
+
+    <!-- smile -->
+    <path d="M635 145C628 151 618 154 607 152" stroke="#4A2812" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- robe-like harness -->
+    <path d="M218 242C270 226 458 223 548 247L522 334C410 364 286 360 192 332L218 242Z" fill="#6C1F1F"/>
+    <path d="M218 242C270 226 458 223 548 247L522 334C410 364 286 360 192 332L218 242Z" fill="url(#circuitPattern)" opacity="0.18"/>
+    <path d="M218 242C270 226 458 223 548 247L522 334C410 364 286 360 192 332L218 242Z" stroke="#D4AE67" stroke-width="4"/>
+
+    <!-- decorative trim -->
+    <path d="M220 260C302 244 445 244 537 263" stroke="#E8C16B" stroke-width="6" stroke-linecap="round"/>
+    <path d="M210 314C304 340 425 341 525 316" stroke="#E8C16B" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- keffiyeh -->
+    <path d="M524 25C549 0 588 -10 623 0C652 8 675 25 684 48C660 48 637 56 617 73C588 96 567 129 557 159C533 130 521 80 524 25Z" fill="url(#keffiyehPattern)" stroke="#D9D0C3" stroke-width="3"/>
+    <path d="M553 148C568 126 586 106 607 90" stroke="#9A1E1E" stroke-width="3" opacity="0.65"/>
+    <path d="M578 159C594 130 615 104 640 84" stroke="#9A1E1E" stroke-width="3" opacity="0.65"/>
+
+    <!-- tool belt -->
+    <g>
+      <rect x="292" y="286" width="154" height="28" rx="12" fill="#4B2611" stroke="#C9931A" stroke-width="3"/>
+      <circle cx="324" cy="300" r="6" fill="url(#gold)"/>
+      <circle cx="372" cy="300" r="6" fill="url(#gold)"/>
+      <circle cx="420" cy="300" r="6" fill="url(#gold)"/>
+    </g>
+
+    <!-- front arm holding tool -->
+    <path d="M505 244C552 251 591 279 615 323" stroke="#7A4724" stroke-width="20" stroke-linecap="round"/>
+    <path d="M613 319L661 298" stroke="#B7BCC2" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="664" cy="296" r="18" fill="#D0D5DA" stroke="#8C9298" stroke-width="4"/>
+    <circle cx="664" cy="296" r="7" fill="#8C9298"/>
+
+    <!-- other arm typing -->
+    <path d="M533 274C594 279 640 292 680 322" stroke="#7A4724" stroke-width="18" stroke-linecap="round"/>
+  </g>
+
+  <!-- Laptop -->
+  <g transform="translate(655 522)">
+    <rect x="0" y="0" width="115" height="78" rx="10" fill="#24343C" stroke="#7EF8FF" stroke-width="3"/>
+    <rect x="10" y="10" width="95" height="58" rx="6" fill="#10242A"/>
+    <path d="M17 57C28 47 42 41 58 41C72 41 83 45 95 55" stroke="#7EF8FF" stroke-width="2.5" fill="none"/>
+    <circle cx="58" cy="35" r="9" fill="none" stroke="#7EF8FF" stroke-width="2"/>
+    <path d="M-12 78H127L140 92H-24L-12 78Z" fill="#6D7880"/>
+  </g>
+
+  <!-- Wire from laptop to AGI core -->
+  <path d="M770 562C830 560 828 540 848 523" stroke="url(#wire)" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Sparks / building effect -->
+  <g filter="url(#smallGlow)">
+    <path d="M702 378L712 398L734 402L718 416L722 437L702 426L682 437L686 416L670 402L692 398L702 378Z"
+          fill="#88FAFF" opacity="0.9"/>
+    <path d="M655 414L661 426L674 428L665 437L667 451L655 444L643 451L645 437L636 428L649 426L655 414Z"
+          fill="#88FAFF" opacity="0.75"/>
+    <path d="M752 410L758 422L771 424L762 433L764 447L752 440L740 447L742 433L733 424L746 422L752 410Z"
+          fill="#88FAFF" opacity="0.75"/>
+  </g>
+
+  <!-- Foreground small components -->
+  <g opacity="0.95">
+    <rect x="865" y="650" width="34" height="18" rx="4" fill="#49545B"/>
+    <rect x="906" y="645" width="48" height="24" rx="4" fill="#5B676F"/>
+    <circle cx="974" cy="660" r="12" fill="#77858F"/>
+    <path d="M979 724c34-10 52-12 84 0" stroke="#915625" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- Subtle shadow under main scene -->
+  <ellipse cx="560" cy="720" rx="380" ry="56" fill="#7A4A21" opacity="0.22"/>
+
+  <!-- Tiny stars / digital dust -->
+  <g opacity="0.5">
+    <circle cx="125" cy="118" r="2" fill="#FFF2C5"/>
+    <circle cx="210" cy="80" r="1.5" fill="#FFF2C5"/>
+    <circle cx="318" cy="130" r="2" fill="#FFF2C5"/>
+    <circle cx="460" cy="88" r="1.5" fill="#FFF2C5"/>
+    <circle cx="1055" cy="108" r="2" fill="#FFF2C5"/>
+    <circle cx="1118" cy="180" r="1.5" fill="#FFF2C5"/>
+  </g>
+</svg>
