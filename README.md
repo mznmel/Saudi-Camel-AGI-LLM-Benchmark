@@ -19,6 +19,10 @@ Generate an SVG illustration of a Saudi camel building an artificial general int
 
 ## Results
 
+### GPT-5.4 Thinking Heavy
+[05-03-2026](./images/svgs/gpt_5.4_thinking_heavy.svg)
+![GPT-5.4 Thinking Heavy](./images/pngs/gpt_5.4_thinking_heavy.png)
+
 ### GPT-5.4 Thinking Standard
 [05-03-2026](./images/svgs/gpt_5.4_thinking_standard.svg)
 ![GPT-5.4 Thinking Standard](./images/pngs/gpt_5.4_thinking_standard.png)
